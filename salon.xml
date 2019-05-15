@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<salon>
+  <samochody rocznik="2009">
+    <samochod typ="">
+      <nazwa>
+        <marka>Mercedes</marka>
+        <model></model>
+      </nazwa> 
+      <bak>
+        <pojemnosc jednostka="l">102</pojemnosc>
+        <rodzaj_paliwa></rodzaj_paliwa>
+      </bak>
+      <przebieg jednostka="km">10000</przebieg>
+    </samochod>
+
+    <samochod typ="">
+      <nazwa>
+        <marka>Mercedes</marka>
+        <model></model>
+      </nazwa> 
+      <bak>
+        <pojemnosc jednostka="l">102</pojemnosc>
+        <rodzaj_paliwa></rodzaj_paliwa>
+      </bak>
+      <przebieg jednostka="km">10000</przebieg>
+    </samochod>
+
+    <samochod typ="">
+      <nazwa>
+        <marka>Mercedes</marka>
+        <model></model>
+      </nazwa> 
+      <bak>
+        <pojemnosc jednostka="l">102</pojemnosc>
+        <rodzaj_paliwa></rodzaj_paliwa>
+      </bak>
+      <przebieg jednostka="km">10000</przebieg>
+    </samochod>
+  </samochody>
+  <samochody rocznik="2011">
+    <samochod typ="" >
+      <nazwa>
+        <marka>Mercedes</marka>
+        <model></model>
+      </nazwa> 
+      <bak>
+        <pojemnosc jednostka="l">102</pojemnosc>
+        <rodzaj_paliwa></rodzaj_paliwa>
+      </bak>
+      <przebieg jednostka="km">10000</przebieg>
+    </samochod>
+
+    <samochod typ="">
+      <nazwa>
+        <marka>Mercedes</marka>
+        <model></model>
+      </nazwa> 
+      <bak>
+        <pojemnosc jednostka="l">102</pojemnosc>
+        <rodzaj_paliwa></rodzaj_paliwa>
+      </bak>
+      <przebieg jednostka="km">10000</przebieg>
+    </samochod>
+
+    <samochod typ="">
+      <nazwa>
+        <marka>Mercedes</marka>
+        <model></model>
+      </nazwa> 
+      <bak>
+        <pojemnosc jednostka="l">102</pojemnosc>
+        <rodzaj_paliwa></rodzaj_paliwa>
+      </bak>
+      <przebieg jednostka="km">10000</przebieg>
+    </samochod>
+  </samochody>
+</salon>
