@@ -3,88 +3,94 @@
   <samochody rocznik="2009">
     <samochod typ="kombi">
       <nazwa>
-        <marka>Mercedes</marka>
-        <model></model>
-      </nazwa> 
+        <marka>Audi</marka>
+        <model>A4</model>
+      </nazwa>
+      <kolor>Srebrny</kolor> 
       <bak>
-        <pojemnosc jednostka="l">102</pojemnosc>
-        <rodzaj_paliwa></rodzaj_paliwa>
+        <pojemnosc jednostka="l">25</pojemnosc>
+        <paliwo>diesel</paliwo>
       </bak>
-      <przebieg jednostka="km">10000</przebieg>
-      <moc jednostka="KM"></moc>
-      <cena></cena>
+      <przebieg jednostka="km">15000</przebieg>
+      <moc jednostka="KM">150</moc>
+      <cena waluta="zl">35000</cena>
     </samochod>
 
     <samochod typ="suv">
       <nazwa>
         <marka>Mercedes</marka>
-        <model></model>
-      </nazwa> 
+        <model>GLE 350 D</model>
+      </nazwa>
+      <kolor>Bialy</kolor> 
       <bak>
-        <pojemnosc jednostka="l">102</pojemnosc>
-        <rodzaj_paliwa></rodzaj_paliwa>
+        <pojemnosc jednostka="l">30</pojemnosc>
+        <paliwo>diesel</paliwo>
       </bak>
-      <przebieg jednostka="km">10000</przebieg>
-      <moc jednostka="KM"></moc>
-      <cena></cena>
+      <przebieg jednostka="km">100</przebieg>
+      <moc jednostka="KM">170</moc>
+      <cena waluta="zl">43000</cena>
     </samochod>
 
     <samochod typ="kombi">
       <nazwa>
-        <marka>Mercedes</marka>
-        <model></model>
-      </nazwa> 
+        <marka>Skoda</marka>
+        <model>Fabia</model>
+      </nazwa>
+      <kolor>Niebieski</kolor> 
       <bak>
-        <pojemnosc jednostka="l">102</pojemnosc>
-        <rodzaj_paliwa></rodzaj_paliwa>
+        <pojemnosc jednostka="l">18</pojemnosc>
+        <paliwo>benzyna</paliwo>
       </bak>
       <przebieg jednostka="km">10000</przebieg>
-      <moc jednostka="KM"></moc>
-      <cena></cena>
+      <moc jednostka="KM">diesel</moc>
+      <cena waluta="zl">30000</cena>
     </samochod>
   </samochody>
+
   <samochody rocznik="2013">
     <samochod typ="sedan">
       <nazwa>
         <marka>Volksvagen</marka>
         <model>Passat</model>
-      </nazwa> 
+      </nazwa>
+      <kolor>Granatowy</kolor> 
       <bak>
-        <pojemnosc jednostka="l">102</pojemnosc>
-        <rodzaj_paliwa>LPG</rodzaj_paliwa>
+        <pojemnosc jednostka="l">35</pojemnosc>
+        <paliwo>LPG</paliwo>
       </bak>
-      <przebieg jednostka="km">10000</przebieg>
-      <moc jednostka="KM"></moc>
-      <cena></cena>
+      <przebieg jednostka="km">2500</przebieg>
+      <moc jednostka="KM">128</moc>
+      <cena waluta="zl">23500</cena>
     </samochod>
 
     <samochod typ="kombi">
-
       <nazwa>
         <marka>Skoda</marka>
         <model>Superb</model>
-      </nazwa> 
+      </nazwa>
+      <kolor>Czarny</kolor> 
       <bak>
-        <pojemnosc jednostka="l">102</pojemnosc>
-        <rodzaj_paliwa></rodzaj_paliwa>
+        <pojemnosc jednostka="l">150</pojemnosc>
+        <paliwo>diesel</paliwo>
       </bak>
-      <przebieg jednostka="km">10000</przebieg>
-      <moc jednostka="KM"></moc>
-      <cena></cena>
+      <przebieg jednostka="km">5000</przebieg>
+      <moc jednostka="KM">diesel</moc>
+      <cena waluta="zl">31000</cena>
     </samochod>
 
     <samochod typ="van">
       <nazwa>
         <marka>Volksvagen</marka>
         <model>Transporter</model>
-      </nazwa> 
+      </nazwa>
+      <kolor></kolor> 
       <bak>
-        <pojemnosc jednostka="l">150.3</pojemnosc>
-        <rodzaj_paliwa></rodzaj_paliwa>
+        <pojemnosc jednostka="l">28</pojemnosc>
+        <paliwo>diesel 2.0 TDI</paliwo>
       </bak>
-      <przebieg jednostka="km">10000</przebieg>
-      <moc jednostka="KM"></moc>
-      <cena></cena>
+      <przebieg jednostka="km">1290</przebieg>
+      <moc jednostka="KM">145</moc>
+      <cena waluta="zl">45000</cena>
     </samochod>
   </samochody>
 </salon>
