@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <salon>
   <samochody rocznik="2009">
+    <!--id samochodu - 4 wielkie litery, a po nich 5 cyfr-->
     <samochod id="MNKD78223">
       <typ>kombi</typ>
       <nazwa>
@@ -99,4 +100,50 @@
       <cena waluta="zl">45000</cena>
     </samochod>
   </samochody>
+  <!--zamowienia (imie, nazwisko i pesel klienta i id samochodu)-->
+  <zamowienia>
+    <!--id zamowienia - 4 male litery,  a po nich 3 cyfry -->
+    <zamowienie id="dlkj313">
+      <imie>Andrzej</imie>
+      <nazwisko>Dmowski</nazwisko>
+      <pesel>02803289129</pesel>
+      <id_samochodu>DKAT02212</id_samochodu>
+    </zamowienie>
+    <zamowienie id="adkl904">
+      <imie>Jan</imie>
+      <nazwisko>Paderewski</nazwisko>
+      <pesel>42982938018</pesel>
+      <id_samochodu>MNKD78223</id_samochodu>
+    </zamowienie>
+    <zamowienie id="kjls990">
+      <imie>Czeslaw</imie>
+      <nazwisko>Milosz</nazwisko>
+      <pesel>97889372334</pesel>
+      <id_samochodu>VAXZ32129</id_samochodu>
+    </zamowienie>
+    <zamowienie id="msjf388">
+      <imie>Krzysztof</imie>
+      <nazwisko>Holowczyc</nazwisko>
+      <pesel>09328092010</pesel>
+      <id_samochodu>KJA39208</id_samochodu>
+    </zamowienie>
+    <zamowienie id="lvxa109">
+      <imie>Adam</imie>
+      <nazwisko>Malysz</nazwisko>
+      <pesel>05720984229</pesel>
+      <id_samochodu>DKAT02212</id_samochodu>
+    </zamowienie>
+    <zamowienie id="pwqo730">
+      <imie>Robert</imie>
+      <nazwisko>Kubica</nazwisko>
+      <pesel>87480932824</pesel>
+      <id_samochodu>PQOD38390</id_samochodu>
+    </zamowienie>
+    <zamowienie id="kflw934">
+      <imie>Stanislaw</imie>
+      <nazwisko>Kostka</nazwisko>
+      <pesel>22098923082</pesel>
+      <id_samochodu>VAXZ32129</id_samochodu>
+    </zamowienie>
+  </zamowienia>
 </salon>
