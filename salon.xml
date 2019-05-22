@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <salon>
   <samochody rocznik="2009">
-    <samochod typ="kombi">
+    <samochod typ="kombi" id="MNKD78223">
       <nazwa>
         <marka>Audi</marka>
         <model>A4</model>
@@ -9,14 +9,14 @@
       <kolor>Srebrny</kolor> 
       <bak>
         <pojemnosc jednostka="l">25</pojemnosc>
-        <paliwo>diesel</paliwo>
+        <paliwo>naped elektryczny</paliwo>
       </bak>
       <przebieg jednostka="km">15000</przebieg>
       <moc jednostka="KM">150</moc>
       <cena waluta="zl">35000</cena>
     </samochod>
 
-    <samochod typ="suv">
+    <samochod typ="suv" id="XNLA37913">
       <nazwa>
         <marka>Mercedes</marka>
         <model>GLE 350 D</model>
@@ -31,7 +31,7 @@
       <cena waluta="zl">43000</cena>
     </samochod>
 
-    <samochod typ="kombi">
+    <samochod typ="kombi" id="LKJA39208">
       <nazwa>
         <marka>Skoda</marka>
         <model>Fabia</model>
@@ -48,7 +48,7 @@
   </samochody>
 
   <samochody rocznik="2013">
-    <samochod typ="sedan">
+    <samochod typ="sedan" id="VAXZ32129">
       <nazwa>
         <marka>Volksvagen</marka>
         <model>Passat</model>
@@ -63,7 +63,7 @@
       <cena waluta="zl">23500</cena>
     </samochod>
 
-    <samochod typ="kombi">
+    <samochod typ="kombi" id="PQOD38390">
       <nazwa>
         <marka>Skoda</marka>
         <model>Superb</model>
@@ -74,19 +74,19 @@
         <paliwo>diesel</paliwo>
       </bak>
       <przebieg jednostka="km">5000</przebieg>
-      <moc jednostka="KM">diesel</moc>
+      <moc jednostka="KM">benzyna</moc>
       <cena waluta="zl">31000</cena>
     </samochod>
 
-    <samochod typ="van">
+    <samochod typ="van" id="DKAT02212">
       <nazwa>
         <marka>Volksvagen</marka>
         <model>Transporter</model>
       </nazwa>
-      <kolor></kolor> 
+      <kolor>Ciemnozielony</kolor> 
       <bak>
         <pojemnosc jednostka="l">28</pojemnosc>
-        <paliwo>diesel 2.0 TDI</paliwo>
+        <paliwo>diesel</paliwo>
       </bak>
       <przebieg jednostka="km">1290</przebieg>
       <moc jednostka="KM">145</moc>
