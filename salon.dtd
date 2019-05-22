@@ -2,8 +2,9 @@
 <!ENTITY % dane_samochodu "nazwa, kolor, bak, przebieg, moc, cena">
 <!ENTITY % dane_nazwy "marka, model">
 <!ENTITY % dane_bak "pojemnosc, paliwo">
-
+<!ENTITY % dane_zamowienia "imie, nazwisko, pesel, id_samochodu">
 <!-- elementy proste -->
+<!-- do samochodu -->
 <!ELEMENT marka (#PCDATA)>
 <!ELEMENT model (#PCDATA)>
 <!ELEMENT kolor (#PCDATA)>
@@ -14,15 +15,25 @@
 <!ELEMENT cena (#PCDATA)>
 <!ELEMENT typ (kombi|suv|sedan|van)>
 
+<!-- do zamowienia -->
+<!ELEMNET imie (#PCDATA)>
+<!ELEMNET nazwisko (#PCDATA)>
+<!ELEMNET pesel (#PCDATA)>
+<!ELEMNET id_samochodu IDREF #REQUIRED>
+
 <!--elementy zlozone-->
+<!-- do samochodu -->
 <!ELEMENT nazwa (%dane_nazwy;)>
 <!ELEMENT bak (%dane_bak;)>
 <!ELEMENT samochod (%dane_samochodu;)>
 <!ELEMENT samochody (samochod+)>
-<!ELEMENT salon (samochody+)>
+<!-- do zamowienia -->
+<!ELEMENT zamowienie (%dane_zamowienia;)>
+<!ELEMENT zamowienia(zamowienie*)
+<!ELEMENT salon (samochody,zamowienia)>
 
 <!-- atrybuty -->
-<!ATTLIST samochody rocznik ID #REQUIRED>
+<!ATTLIST samochody rocznik CDATA #REQUIRED>
 
 <!ATTLIST samochod id ID #REQUIRED>
 
