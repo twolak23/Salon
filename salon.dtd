@@ -12,6 +12,7 @@
 <!ELEMENT przebieg (#PCDATA)>
 <!ELEMENT moc (#PCDATA)>
 <!ELEMENT cena (#PCDATA)>
+<!ELEMENT typ (kombi|suv|sedan|van)>
 
 <!--elementy zlozone-->
 <!ELEMENT nazwa (%dane_nazwy;)>
@@ -24,7 +25,6 @@
 <!ATTLIST samochody rocznik ID #REQUIRED>
 
 <!ATTLIST samochod id ID #REQUIRED>
-<!ATTLIST samochod typ CDATA "(kombi|suv|sedan|van)">
 
 <!ATTLIST pojemnosc jednostka CDATA "l">
 
