@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE salon SYSTEM "salon.dtd">
 <salon>
   <samochody rocznik="2009">
     <samochod typ="kombi" id="MNKD78223">
