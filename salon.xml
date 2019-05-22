@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE salon SYSTEM "salon.dtd">
 <salon>
   <samochody rocznik="2009">
-    <samochod typ="kombi" id="MNKD78223">
+    <samochod id="MNKD78223">
+      <typ>kombi</typ>
       <nazwa>
         <marka>Audi</marka>
         <model>A4</model>
@@ -17,7 +17,8 @@
       <cena waluta="zl">35000</cena>
     </samochod>
 
-    <samochod typ="suv" id="XNLA37913">
+    <samochod id="XNLA37913">
+      <typ>suv</typ>
       <nazwa>
         <marka>Mercedes</marka>
         <model>GLE 350 D</model>
@@ -32,7 +33,8 @@
       <cena waluta="zl">43000</cena>
     </samochod>
 
-    <samochod typ="kombi" id="LKJA39208">
+    <samochod id="LKJA39208">
+      <typ>kombi</typ>
       <nazwa>
         <marka>Skoda</marka>
         <model>Fabia</model>
@@ -49,7 +51,8 @@
   </samochody>
 
   <samochody rocznik="2013">
-    <samochod typ="sedan" id="VAXZ32129">
+    <samochod id="VAXZ32129">
+      <typ>sedan</typ>
       <nazwa>
         <marka>Volksvagen</marka>
         <model>Passat</model>
@@ -64,7 +67,8 @@
       <cena waluta="zl">23500</cena>
     </samochod>
 
-    <samochod typ="kombi" id="PQOD38390">
+    <samochod id="PQOD38390">
+      <typ>kombi</typ>
       <nazwa>
         <marka>Skoda</marka>
         <model>Superb</model>
@@ -79,7 +83,8 @@
       <cena waluta="zl">31000</cena>
     </samochod>
 
-    <samochod typ="van" id="DKAT02212">
+    <samochod id="DKAT02212">
+      <typ>van</typ>
       <nazwa>
         <marka>Volksvagen</marka>
         <model>Transporter</model>
