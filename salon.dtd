@@ -29,7 +29,8 @@
 <!ELEMENT samochody (samochod+)>
 <!-- do zamowienia -->
 <!ELEMENT zamowienie (%dane_zamowienia;)>
-<!ELEMENT zamowienia(zamowienie*)
+<!ELEMENT zamowienia(zamowienie*)>
+
 <!ELEMENT salon (samochody,zamowienia)>
 
 <!-- atrybuty -->
@@ -45,5 +46,4 @@
 
 <!ATTLIST cena waluta CDATA "zl">
 
-
-
+<!ATTLIST zamowienie id ID #REQUIRED>
