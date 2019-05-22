@@ -1,0 +1,38 @@
+<!--encje do elementow z innymi elementami-->
+<!ENTITY % dane_samochodu "nazwa, kolor, bak, przebieg, moc, cena">
+<!ENTITY % dane_nazwy "marka, model">
+<!ENTITY % dane_bak "pojemnosc, paliwo">
+
+<!-- elementy proste -->
+<!ELEMENT marka (#PCDATA)>
+<!ELEMENT model (#PCDATA)>
+<!ELEMENT kolor (#PCDATA)>
+<!ELEMENT pojemnosc (#PCDATA)>
+<!ELEMENT paliwo (#PCDATA)>
+<!ELEMENT przebieg (#PCDATA)>
+<!ELEMENT moc (#PCDATA)>
+<!ELEMENT cena (#PCDATA)>
+
+<!--elementy zlozone-->
+<!ELEMENT nazwa (%dane_nazwy;)>
+<!ELEMENT bak (%dane_bak;)>
+<!ELEMENT samochod (%dane_samochodu;)>
+<!ELEMENT samochody (samochod+)>
+<!ELEMENT salon (samochody+)>
+
+<!-- atrybuty -->
+<!ATTLIST samochody rocznik ID #REQUIRED>
+
+<!ATTLIST samochod id ID #REQUIRED>
+<!ATTLIST samochod typ CDATA "(kombi|suv|sedan|van)">
+
+<!ATTLIST pojemnosc jednostka CDATA "l">
+
+<!ATTLIST przebieg jednostka CDATA "km">
+
+<!ATTLIST moc jednostka CDATA "KM">
+
+<!ATTLIST cena waluta CDATA "zl">
+
+
+
