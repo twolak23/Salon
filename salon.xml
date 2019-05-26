@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE biblioteka SYSTEM "biblioteka.dtd">
 <salon xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="salon.xsd">
-  <samochody rocznik="2009">
+
     <!--id samochodu - 4 wielkie litery, a po nich 5 cyfr-->
     <samochod id="MNKD78223">
       <typ>kombi</typ>
@@ -8,6 +9,7 @@
         <marka>Audi</marka>
         <model>A4</model>
       </nazwa>
+      <rocznik>2007</rocznik>
       <kolor>Srebrny</kolor> 
       <bak>
         <paliwo>naped elektryczny</paliwo>
@@ -23,6 +25,7 @@
         <marka>Mercedes</marka>
         <model>GLE 350 D</model>
       </nazwa>
+      <rocznik>2009</rocznik>
       <kolor>Bialy</kolor> 
       <bak>
         <pojemnosc jednostka="l">30</pojemnosc>
@@ -39,6 +42,7 @@
         <marka>Skoda</marka>
         <model>Fabia</model>
       </nazwa>
+      <rocznik>2010</rocznik>
       <kolor>Niebieski</kolor> 
       <bak>
         <pojemnosc jednostka="l">18</pojemnosc>
@@ -48,15 +52,14 @@
       <moc jednostka="KM">123</moc>
       <cena waluta="zl">30000</cena>
     </samochod>
-  </samochody>
 
-  <samochody rocznik="2013">
     <samochod id="VAXZ32129">
       <typ>sedan</typ>
       <nazwa>
         <marka>Volksvagen</marka>
         <model>Passat</model>
       </nazwa>
+      <rocznik>2013</rocznik>
       <kolor>Granatowy</kolor> 
       <bak>
         <pojemnosc jednostka="l">35</pojemnosc>
@@ -73,7 +76,8 @@
         <marka>Skoda</marka>
         <model>Superb</model>
       </nazwa>
-      <kolor>Czarny</kolor> 
+      <rocznik>2013</rocznik>
+      <kolor>Czarny</kolor>
       <bak>
         <pojemnosc jednostka="l">150</pojemnosc>
         <paliwo>diesel</paliwo>
@@ -89,6 +93,7 @@
         <marka>Volksvagen</marka>
         <model>Transporter</model>
       </nazwa>
+      <rocznik>2009</rocznik>
       <kolor>Ciemnozielony</kolor> 
       <bak>
         <pojemnosc jednostka="l">28</pojemnosc>
@@ -98,7 +103,6 @@
       <moc jednostka="KM">145</moc>
       <cena waluta="zl">45000</cena>
     </samochod>
-  </samochody>
   <!--zamowienia (imie, nazwisko i pesel klienta i id samochodu)-->
   <zamowienia>
     <!--id zamowienia - 4 male litery,  a po nich 3 cyfry -->
