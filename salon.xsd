@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <!--definicje typow do elementow samochodu-->
+  <xs:simpleType name="rocznikType">
+    <xs:restriction base="xs:gYear">
+      <xs:minInclusive value="1940"/>
+      <xs:maxInclusive value="2019"/>
+    </xs:restriction>
+  </xs:simpleType>
+<!--id samochodu (klucz)-->
+  <xs:simpleType name="idSamType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[A-Z]{4}\d{5}"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="typType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="kombi"/>
+      <xs:enumeration value="suv"/>
+      <xs:enumeration value="sedan"/>
+      <xs:enumeration value="van"/>
+      <xs:enumeration value="pickup"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="pojemnoscType">
+    <xs:restriction base="xs:integer">
+      <xs:minInclusive value="10"/>
+      <xs:maxInclusive value="300"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="paliwoType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="diesel"/>
+      <xs:enumeration value="benzyna"/>
+      <xs:enumeration value="LPG"/>
+      <xs:enumeration value="naped elektryczny"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="jednostkaType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="km"/>
+      <xs:enumeration value="KM"/>
+      <xs:enumeration value="l"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="przebiegType">
+    <xs:restriction base="xs:integer">
+      <xs:minInclusive value="0"/>
+      <xs:maxInclusive value="100000"/>
+    </xs:restriction>
+  </xs:simpleType>
+  
+  <xs:simpleType name="mocType">
+    <xs:restriction base="xs:integer">
+      <xs:minInclusive value="50"/>
+      <xs:maxInclusive value="500"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="cenaType">
+    <xs:restriction base="xs:integer">
+      <xs:minInclusive value="10000"/>
+      <xs:maxInclusive value="500000"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  
+  <!--definicja elementow -->
+  <xs:element name="typ" type="typType"/>
+  <xs:element name="nazwa">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="marka" type="xs:string"/>
+        <xs:element name="model" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="kolor" type="xs:string"/>
+  <xs:attribute name="jednostka" type="jednostkaType"/>
+
+  <xs:element name="pojemnosc">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="pojemnoscType">
+          <xs:attribute ref="jednostka"/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="bak">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="pojemnosc" minOccurs="0"/>
+        <xs:element name="paliwo" type="paliwoType"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="przebieg">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="przebiegType">
+          <xs:attribute ref="jednostka"/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="moc">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="mocType">
+          <xs:attribute ref="jednostka"/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="cena">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="cenaType">
+          <xs:attribute name="waluta"/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+
+  
+  <xs:attribute name="rocznik" type="rocznikType"/>
+  <xs:element name="samochod">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="typ"/>
+        <xs:element ref="nazwa"/>
+        <xs:element ref="kolor"/>
+        <xs:element ref="bak"/>
+        <xs:element ref="przebieg"/>
+        <xs:element ref="moc"/>
+        <xs:element ref="cena"/>
+      </xs:sequence>
+      <xs:attribute name="id" type="idSamType"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="samochody">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="samochod" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute ref="rocznik"/>
+    </xs:complexType>
+  </xs:element>
+
+<!-- definiicja typow do elementow zamowienia-->
+  <xs:simpleType name="idZamType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[a-z]{4}\d{3}"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="peselType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="\d{11}"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="imieNazwiskoType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[A-Z][a-z]{2,30}"/>
+    </xs:restriction>
+  </xs:simpleType>
+<!--definicja elementow zamowienia -->
+  <xs:element name="imie" type="imieNazwiskoType"/>
+  <xs:element name="nazwisko" type="imieNazwiskoType"/>
+  <xs:element name="pesel" type="peselType"/>
+  <xs:element name="id_samochodu" type="idSamType"/> 
+
+  <xs:element name="zamowienie">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="imie"/>
+        <xs:element ref="nazwisko"/>
+        <xs:element ref="pesel"/>
+        <xs:element ref="id_samochodu"/>
+      </xs:sequence>
+      <xs:attribute name="id"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="zamowienia">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="zamowienie" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="salon">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="samochody" maxOccurs="unbounded"/>
+        <xs:element ref="zamowienia"/>
+      </xs:sequence>
+    </xs:complexType>
+    <xs:key name="idSam">
+        <xs:selector xpath="samochody/samochod"/>
+        <xs:field xpath="@id"/>
+      </xs:key>
+      <xs:keyref name="idSamZ" refer="idSam">
+        <xs:selector xpath="zamowienia/zamowienie"/>
+        <xs:field xpath="id_samochodu"/>
+      </xs:keyref>
+  </xs:element>
+</xs:schema>
