@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<salon>
+<salon xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="salon.xsd">
   <samochody rocznik="2009">
     <!--id samochodu - 4 wielkie litery, a po nich 5 cyfr-->
     <samochod id="MNKD78223">
@@ -10,7 +10,6 @@
       </nazwa>
       <kolor>Srebrny</kolor> 
       <bak>
-        <pojemnosc jednostka="l">25</pojemnosc>
         <paliwo>naped elektryczny</paliwo>
       </bak>
       <przebieg jednostka="km">15000</przebieg>
@@ -46,7 +45,7 @@
         <paliwo>benzyna</paliwo>
       </bak>
       <przebieg jednostka="km">10000</przebieg>
-      <moc jednostka="KM">diesel</moc>
+      <moc jednostka="KM">123</moc>
       <cena waluta="zl">30000</cena>
     </samochod>
   </samochody>
@@ -80,7 +79,7 @@
         <paliwo>diesel</paliwo>
       </bak>
       <przebieg jednostka="km">5000</przebieg>
-      <moc jednostka="KM">benzyna</moc>
+      <moc jednostka="KM">130</moc>
       <cena waluta="zl">31000</cena>
     </samochod>
 
@@ -125,7 +124,7 @@
       <imie>Krzysztof</imie>
       <nazwisko>Holowczyc</nazwisko>
       <pesel>09328092010</pesel>
-      <id_samochodu>KJA39208</id_samochodu>
+      <id_samochodu>LKJA39208</id_samochodu>
     </zamowienie>
     <zamowienie id="lvxa109">
       <imie>Adam</imie>
