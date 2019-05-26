@@ -61,7 +61,7 @@
       <xs:maxInclusive value="500"/>
     </xs:restriction>
   </xs:simpleType>
-  
+
   <xs:simpleType name="cenaType">
     <xs:restriction base="xs:integer">
       <xs:minInclusive value="10000"/>
@@ -80,7 +80,7 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-
+  <xs:element name="rocznik" type="rocznikType"/>
   <xs:element name="kolor" type="xs:string"/>
   <xs:attribute name="jednostka" type="jednostkaType"/>
 
@@ -122,24 +122,24 @@
       </xs:simpleContent>
     </xs:complexType>
   </xs:element>
-  
+
   <xs:element name="cena">
     <xs:complexType>
       <xs:simpleContent>
         <xs:extension base="cenaType">
-          <xs:attribute name="waluta" type="xs:string"/>
+          <xs:attribute name="waluta"/>
         </xs:extension>
       </xs:simpleContent>
     </xs:complexType>
   </xs:element>
 
-  
-  <xs:attribute name="rocznik" type="rocznikType"/>
+
   <xs:element name="samochod">
     <xs:complexType>
       <xs:sequence>
         <xs:element ref="typ"/>
         <xs:element ref="nazwa"/>
+        <xs:element ref="rocznik"/>
         <xs:element ref="kolor"/>
         <xs:element ref="bak"/>
         <xs:element ref="przebieg"/>
@@ -147,15 +147,6 @@
         <xs:element ref="cena"/>
       </xs:sequence>
       <xs:attribute name="id" type="idSamType"/>
-    </xs:complexType>
-  </xs:element>
-
-  <xs:element name="samochody">
-    <xs:complexType>
-      <xs:sequence>
-        <xs:element ref="samochod" maxOccurs="unbounded"/>
-      </xs:sequence>
-      <xs:attribute ref="rocznik"/>
     </xs:complexType>
   </xs:element>
 
@@ -206,12 +197,12 @@
   <xs:element name="salon">
     <xs:complexType>
       <xs:sequence>
-        <xs:element ref="samochody" maxOccurs="unbounded"/>
+        <xs:element ref="samochod" maxOccurs="unbounded"/>
         <xs:element ref="zamowienia"/>
       </xs:sequence>
     </xs:complexType>
     <xs:key name="idSam">
-        <xs:selector xpath="samochody/samochod"/>
+        <xs:selector xpath="samochod"/>
         <xs:field xpath="@id"/>
       </xs:key>
       <xs:keyref name="idSamZ" refer="idSam">
