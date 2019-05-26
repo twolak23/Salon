@@ -61,7 +61,7 @@
       <xs:maxInclusive value="500"/>
     </xs:restriction>
   </xs:simpleType>
-
+  
   <xs:simpleType name="cenaType">
     <xs:restriction base="xs:integer">
       <xs:minInclusive value="10000"/>
@@ -122,12 +122,12 @@
       </xs:simpleContent>
     </xs:complexType>
   </xs:element>
-
+  
   <xs:element name="cena">
     <xs:complexType>
       <xs:simpleContent>
         <xs:extension base="cenaType">
-          <xs:attribute name="waluta"/>
+          <xs:attribute name="waluta" type="xs:string"/>
         </xs:extension>
       </xs:simpleContent>
     </xs:complexType>
