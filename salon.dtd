@@ -1,41 +1,39 @@
 <!--encje do elementow z innymi elementami-->
-<!ENTITY % dane_samochodu "nazwa, kolor, bak, przebieg, moc, cena">
+<!ENTITY % dane_samochodu "typ, nazwa, rocznik, kolor, bak, przebieg, moc, cena">
 <!ENTITY % dane_nazwy "marka, model">
 <!ENTITY % dane_bak "pojemnosc, paliwo">
 <!ENTITY % dane_zamowienia "imie, nazwisko, pesel, id_samochodu">
 <!-- elementy proste -->
 <!-- do samochodu -->
+<!ELEMENT rocznik (#PCDATA)>
 <!ELEMENT marka (#PCDATA)>
 <!ELEMENT model (#PCDATA)>
 <!ELEMENT kolor (#PCDATA)>
 <!ELEMENT pojemnosc (#PCDATA)>
-<!ELEMENT paliwo (#PCDATA)>
+<!ELEMENT paliwo (diesel|LPG|benzyna|naped elektryczny)>
 <!ELEMENT przebieg (#PCDATA)>
 <!ELEMENT moc (#PCDATA)>
 <!ELEMENT cena (#PCDATA)>
 <!ELEMENT typ (kombi|suv|sedan|van)>
 
 <!-- do zamowienia -->
-<!ELEMNET imie (#PCDATA)>
-<!ELEMNET nazwisko (#PCDATA)>
-<!ELEMNET pesel (#PCDATA)>
-<!ELEMNET id_samochodu IDREF #REQUIRED>
+<!ELEMENT imie (#PCDATA)>
+<!ELEMENT nazwisko (#PCDATA)>
+<!ELEMENT pesel (#PCDATA)>
+<!ELEMENT id_samochodu IDREF #REQUIRED>
 
 <!--elementy zlozone-->
 <!-- do samochodu -->
 <!ELEMENT nazwa (%dane_nazwy;)>
 <!ELEMENT bak (%dane_bak;)>
 <!ELEMENT samochod (%dane_samochodu;)>
-<!ELEMENT samochody (samochod+)>
 <!-- do zamowienia -->
 <!ELEMENT zamowienie (%dane_zamowienia;)>
 <!ELEMENT zamowienia(zamowienie*)>
 
-<!ELEMENT salon (samochody,zamowienia)>
+<!ELEMENT salon (samochod+,zamowienia)>
 
 <!-- atrybuty -->
-<!ATTLIST samochody rocznik CDATA #REQUIRED>
-
 <!ATTLIST samochod id ID #REQUIRED>
 
 <!ATTLIST pojemnosc jednostka CDATA "l">
