@@ -46,7 +46,7 @@
               <ul>
                 <li><b>Imie i nazwisko: </b><xsl:value-of select="imie"/> <xsl:text> </xsl:text><xsl:value-of select="nazwisko"/> </li>
                 <li><b>PESEL:</b> <xsl:value-of select="pesel"/></li>
-                <li><b>ID samochodu:</b> <xsl:value-of select="id_samochodu"/></li>
+                <li><b>ID samochodu:</b> <xsl:value-of select="@id_samochodu"/></li>
               </ul>
             </div>
           </xsl:for-each>
