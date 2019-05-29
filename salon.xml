@@ -106,47 +106,40 @@
   <!--zamowienia (imie, nazwisko i pesel klienta i id samochodu)-->
   <zamowienia>
     <!--id zamowienia - 4 male litery,  a po nich 3 cyfry -->
-    <zamowienie id="dlkj313">
+    <zamowienie id="dlkj313" id_samochodu="DKAT02212">
       <imie>Andrzej</imie>
       <nazwisko>Dmowski</nazwisko>
       <pesel>02803289129</pesel>
-      <id_samochodu>DKAT02212</id_samochodu>
     </zamowienie>
-    <zamowienie id="adkl904">
+    <zamowienie id="adkl904" id_samochodu="MNKD78223">
       <imie>Jan</imie>
       <nazwisko>Paderewski</nazwisko>
       <pesel>42982938018</pesel>
-      <id_samochodu>MNKD78223</id_samochodu>
     </zamowienie>
-    <zamowienie id="kjls990">
+    <zamowienie id="kjls990" id_samochodu="VAXZ32129">
       <imie>Czeslaw</imie>
       <nazwisko>Milosz</nazwisko>
       <pesel>97889372334</pesel>
-      <id_samochodu>VAXZ32129</id_samochodu>
     </zamowienie>
-    <zamowienie id="msjf388">
+    <zamowienie id="msjf388" id_samochodu="LKJA39208">
       <imie>Krzysztof</imie>
       <nazwisko>Holowczyc</nazwisko>
       <pesel>09328092010</pesel>
-      <id_samochodu>LKJA39208</id_samochodu>
     </zamowienie>
-    <zamowienie id="lvxa109">
+    <zamowienie id="lvxa109" id_samochodu="DKAT02212">
       <imie>Adam</imie>
       <nazwisko>Malysz</nazwisko>
       <pesel>05720984229</pesel>
-      <id_samochodu>DKAT02212</id_samochodu>
     </zamowienie>
-    <zamowienie id="pwqo730">
+    <zamowienie id="pwqo730" id_samochodu="PQOD38390">
       <imie>Robert</imie>
       <nazwisko>Kubica</nazwisko>
       <pesel>87480932824</pesel>
-      <id_samochodu>PQOD38390</id_samochodu>
     </zamowienie>
-    <zamowienie id="kflw934">
+    <zamowienie id="kflw934" id_samochodu="VAXZ32129">
       <imie>Stanislaw</imie>
       <nazwisko>Kostka</nazwisko>
       <pesel>22098923082</pesel>
-      <id_samochodu>VAXZ32129</id_samochodu>
     </zamowienie>
   </zamowienia>
 </salon>
