@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="salon.css"?>
 <!DOCTYPE salon SYSTEM "salon.dtd">
 <salon xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="salon.xsd">
-
+  <samochody>
     <!--id samochodu - 4 wielkie litery, a po nich 5 cyfr-->
     <samochod id="MNKD78223">
       <typ>kombi</typ>
@@ -103,6 +104,7 @@
       <moc jednostka="KM">145</moc>
       <cena waluta="zl">45000</cena>
     </samochod>
+  </samochody>
   <!--zamowienia (imie, nazwisko i pesel klienta i id samochodu)-->
   <zamowienia>
     <!--id zamowienia - 4 male litery,  a po nich 3 cyfry -->
