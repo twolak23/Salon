@@ -26,11 +26,13 @@
 <!ELEMENT nazwa (%dane_nazwy;)>
 <!ELEMENT bak (%dane_bak;)>
 <!ELEMENT samochod (%dane_samochodu;)>
+<!ELEMENT samochody (samochod+)>
+
 <!-- do zamowienia -->
 <!ELEMENT zamowienie (%dane_zamowienia;)>
 <!ELEMENT zamowienia (zamowienie*)>
 
-<!ELEMENT salon (samochod+,zamowienia)>
+<!ELEMENT salon (samochody,zamowienia)>
 
 <!-- atrybuty -->
 <!ATTLIST samochod id ID #REQUIRED>
