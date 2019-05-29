@@ -150,6 +150,14 @@
     </xs:complexType>
   </xs:element>
 
+  <xs:element name="samochody">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="samochod" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
 <!-- definiicja typow do elementow zamowienia-->
   <xs:simpleType name="idZamType">
     <xs:restriction base="xs:string">
@@ -197,7 +205,7 @@
   <xs:element name="salon">
     <xs:complexType>
       <xs:sequence>
-        <xs:element ref="samochod" maxOccurs="unbounded"/>
+        <xs:element ref="samochody"/>
         <xs:element ref="zamowienia"/>
       </xs:sequence>
     </xs:complexType>
