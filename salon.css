@@ -11,6 +11,7 @@ salon{
   display: block;
   background-color: #0036f9;
 }
+
 samochody::before{
   content:"Samochody: ";
   font-size: 20px;
@@ -19,6 +20,13 @@ samochody{
   background-color: #535afc; 
   width:40%; 
   display: inline-block; 
+}
+
+samochod::before{
+  content: attr(id);
+  text-decoration: underline;
+  font-weight: bold;
+  color: red;
 }
 samochod{
   display:block; 
@@ -33,65 +41,115 @@ typ::before{
   content: "Typ: ";
   font-weight: bold;
 }
-typ {
-  text-decoration: underline;
-}
 nazwa::before{
   content: "Nazwa: ";
   font-weight: bold;
 }
-nazwa {
-  text-decoration: underline;
+nazwa{
+  font-weight: bold;
+  font-size: 20px;
+
 }
 rocznik::before{
   content: "Rocznik: ";
   font-weight: bold;
 }
-rocznik {
-  text-decoration: underline;
+kolor::before{
+  content: "Kolor: ";
+  font-weight: bolder;
+}
+kolor{
+
 }
 pojemnosc::before{
   content: "Pojemnosc paliwa: ";
   font-weight: bold;
 }
-pojmenosc::after{
+pojemnosc::after{
   content: attr(jednostka);
 }
-pojemnosc {
-  text-decoration: underline;
-}
+
 paliwo::before{
   content: "Typ paliwa: ";
   font-weight: bold;
 }
-paliwo {
-  text-decoration: underline;
+paliwo::after{
+  content:attr(jednostka);
 }
 przebieg::before{
   content: "Przebieg: ";
   font-weight: bold;
 }
-przebieg {
-  text-decoration: underline;
+przebieg::after{
+  content:attr(jednostka);
 }
 moc::before{
   content: "Moc: ";
   font-weight: bold;
 }
-moc {
-  text-decoration: underline;
+moc:after{
+  content:attr(jednostka);
 }
 cena::before{
-  content: "Typ: ";
+  content: "Cena: ";
   font-weight: bold;
   text-decoration: underline;
 }
-cena {
-  text-decoration: underline;
+cena::after{
+  content:attr(waluta);
+}
+cena{
+  font-size:20px;
 }
 samochod:hover{
   background-color: white;
 }
-zamowienia{
+zamowienia::before{
   display: inline-block;
+  content:"Zamowienia";
+  font-size: 20px;
+  font-weight: bold;
+}
+zamowienia{
+  background-color: #42d4f4; 
+  width:40%; 
+  display: inline-block;
+  vertical-align: top;
+}
+
+zamowienie::before{
+  content: attr(id);
+  text-decoration: underline;
+  font-weight: bold;
+  color: red;
+}
+zamowienie{
+  display:block; 
+  background-color: #9196ff; 
+  border: dashed 1px; 
+  margin: 10px 10px 10px 10px;
+
+}
+imie::before{
+  content: "Imie: ";
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+nazwisko::before{
+  content: "Nazwisko: ";
+  font-weight: bold;
+  text-decoration: underline;
+}
+pesel::before{
+  content: "Pesel: ";
+  font-weight: bold;
+  text-decoration: underline;
+}
+imie, nazwisko, pesel{
+  display: block;
+  margin: 1px 1px 1px 1px;
+}
+zamowienie:hover{
+  background-color: white;
 }
