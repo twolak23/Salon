@@ -11,7 +11,7 @@
         <!-- blok na samochody -->
         <div id="samochody" style="background-color: #535afc; width:40%; display: inline-block; position: static">
           <h2>Samochody</h2>
-            <xsl:for-each select="salon/samochod">
+            <xsl:for-each select="salon/samochody/samochod">
               <!-- kontener dla kazdego samochodu-->
               <div class="samochod" style="display:block; background-color: #9196ff; border: dashed 1px; margin: 10px 10px 10px 10px;">
                 <!--nazwa samochodu -->
