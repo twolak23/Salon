@@ -1,0 +1,97 @@
+salon::before{
+  content:"SALON SAMOCHODOWY";
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  background-color: #0036f9;
+}
+salon{
+  display: block;
+  background-color: #0036f9;
+}
+samochody::before{
+  content:"Samochody: ";
+  font-size: 20px;
+}
+samochody{
+  background-color: #535afc; 
+  width:40%; 
+  display: inline-block; 
+}
+samochod{
+  display:block; 
+  background-color: #9196ff; 
+  border: dashed 1px; 
+  margin: 10px 10px 10px 10px;
+}
+nazwa, typ, rocznik, pojemnosc, paliwo, przebieg, moc, cena{
+  display:block;
+}
+typ::before{
+  content: "Typ: ";
+  font-weight: bold;
+}
+typ {
+  text-decoration: underline;
+}
+nazwa::before{
+  content: "Nazwa: ";
+  font-weight: bold;
+}
+nazwa {
+  text-decoration: underline;
+}
+rocznik::before{
+  content: "Rocznik: ";
+  font-weight: bold;
+}
+rocznik {
+  text-decoration: underline;
+}
+pojemnosc::before{
+  content: "Pojemnosc paliwa: ";
+  font-weight: bold;
+}
+pojmenosc::after{
+  content: attr(jednostka);
+}
+pojemnosc {
+  text-decoration: underline;
+}
+paliwo::before{
+  content: "Typ paliwa: ";
+  font-weight: bold;
+}
+paliwo {
+  text-decoration: underline;
+}
+przebieg::before{
+  content: "Przebieg: ";
+  font-weight: bold;
+}
+przebieg {
+  text-decoration: underline;
+}
+moc::before{
+  content: "Moc: ";
+  font-weight: bold;
+}
+moc {
+  text-decoration: underline;
+}
+cena::before{
+  content: "Typ: ";
+  font-weight: bold;
+  text-decoration: underline;
+}
+cena {
+  text-decoration: underline;
+}
+samochod:hover{
+  background-color: white;
+}
+zamowienia{
+  display: inline-block;
+}
