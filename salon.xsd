@@ -180,9 +180,9 @@
         <xs:element ref="imie"/>
         <xs:element ref="nazwisko"/>
         <xs:element ref="pesel"/>
-        <xs:element ref="id_samochodu"/>
       </xs:sequence>
-      <xs:attribute name="id"/>
+      <xs:attribute name="id" type="idZamType"/>
+      <xs:attribute name="id_samochodu" type="idSamType"/>
     </xs:complexType>
   </xs:element>
 
@@ -207,7 +207,7 @@
       </xs:key>
       <xs:keyref name="idSamZ" refer="idSam">
         <xs:selector xpath="zamowienia/zamowienie"/>
-        <xs:field xpath="id_samochodu"/>
+        <xs:field xpath="@id_samochodu"/>
       </xs:keyref>
   </xs:element>
 </xs:schema>
