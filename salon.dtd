@@ -1,8 +1,8 @@
 <!--encje do elementow z innymi elementami-->
 <!ENTITY % dane_samochodu "typ, nazwa, rocznik, kolor, bak, przebieg, moc, cena">
 <!ENTITY % dane_nazwy "marka, model">
-<!ENTITY % dane_bak "pojemnosc, paliwo">
-<!ENTITY % dane_zamowienia "imie, nazwisko, pesel, id_samochodu">
+<!ENTITY % dane_bak "pojemnosc?, paliwo">
+<!ENTITY % dane_zamowienia "imie, nazwisko, pesel">
 <!-- elementy proste -->
 <!-- do samochodu -->
 <!ELEMENT rocznik (#PCDATA)>
@@ -10,17 +10,16 @@
 <!ELEMENT model (#PCDATA)>
 <!ELEMENT kolor (#PCDATA)>
 <!ELEMENT pojemnosc (#PCDATA)>
-<!ELEMENT paliwo (diesel|LPG|benzyna|naped elektryczny)>
+<!ELEMENT paliwo (#PCDATA)>
 <!ELEMENT przebieg (#PCDATA)>
 <!ELEMENT moc (#PCDATA)>
 <!ELEMENT cena (#PCDATA)>
-<!ELEMENT typ (kombi|suv|sedan|van)>
+<!ELEMENT typ (#PCDATA)>
 
 <!-- do zamowienia -->
 <!ELEMENT imie (#PCDATA)>
 <!ELEMENT nazwisko (#PCDATA)>
 <!ELEMENT pesel (#PCDATA)>
-<!ELEMENT id_samochodu IDREF #REQUIRED>
 
 <!--elementy zlozone-->
 <!-- do samochodu -->
@@ -29,7 +28,7 @@
 <!ELEMENT samochod (%dane_samochodu;)>
 <!-- do zamowienia -->
 <!ELEMENT zamowienie (%dane_zamowienia;)>
-<!ELEMENT zamowienia(zamowienie*)>
+<!ELEMENT zamowienia (zamowienie*)>
 
 <!ELEMENT salon (samochod+,zamowienia)>
 
@@ -45,3 +44,4 @@
 <!ATTLIST cena waluta CDATA "zl">
 
 <!ATTLIST zamowienie id ID #REQUIRED>
+<!ATTLIST zamowienie id_samochodu IDREF #REQUIRED>
